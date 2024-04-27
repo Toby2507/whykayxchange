@@ -51,7 +51,7 @@ const Contact = () => {
           placeholder="Your message"
         />
         <motion.button variants={buttonVariants} className="bg-white px-5 py-2 rounded-3xl md:px-8 md:py-4 md:rounded-full lg:px-10">
-          <a href={`https://wa.me/+2348026580836?${encodeURIComponent(message)}`} target='_blank' rel='noreferrer'>
+          <a href={`https://wa.me/+2348026580836?text=${encodeURIComponent(message)}`} target='_blank' rel='noreferrer'>
             <div className="flex items-center">
               <p className="tracking-wide md:text-xl">Send</p>
               <div className='border-b border-black ml-2 h-1 w-6 md:ml-3 md:w-12 lg:ml-4 lg:w-16' />
