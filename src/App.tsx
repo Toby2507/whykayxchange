@@ -7,7 +7,7 @@ const App = () => {
       <header>
         <Navbar />
       </header>
-      <main className="mx-auto px-4 py-10 pb-20 md:px-10 lg:px-0 lg:w-10/12 xl:w-9/12">
+      <main className="mx-auto px-6 py-10 pb-20 md:px-10 lg:px-0 lg:w-10/12 xl:w-9/12">
         <Home />
         <Services />
         <About />

@@ -26,8 +26,8 @@ const Services = () => {
         <motion.h2 variants={textVariants} className="text-white font-secondary text-4xl font-semibold capitalize leading-[1.1] md:text-5xl sm:font-medium lg:text-7xl">Buy and sell with ease: </motion.h2>
         <motion.p variants={textVariants} className="text-gray-200 text-sm italic tracking-wide font-secondary -mt-7 sm:text-lg lg:-mt-9">Your One-Stop Shop for All Things Digital.</motion.p>
         <ul className="grid grid-cols-2 gap-x-10 gap-y-3">
-          {services.map(({ name, img }) => (
-            <motion.li variants={listVariants} className='group flex items-center gap-3'>
+          {services.map(({ name, img }, idx) => (
+            <motion.li key={idx} variants={listVariants} className='group flex items-center gap-3'>
               <img alt={name} className='w-8' src={img} />
               <p className='text-gray-300 font-light text-sm pb-2 transition-all duration-500 ease-in-out group-hover:translate-x-3'>{name}</p>
             </motion.li>

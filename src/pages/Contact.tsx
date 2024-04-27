@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { IoMailOutline } from "react-icons/io5";
 import { MdLocalPhone } from "react-icons/md";
 
@@ -25,10 +25,6 @@ const Contact = () => {
     offScreen: { y: 40, opacity: 0 },
     onScreen: { y: 0, opacity: 1, transition: { type: 'spring', stiffness: 200, damping: 30, duration: 0.8 } },
   };
-
-  useEffect(() => {
-    console.log(encodeURIComponent(message));
-  }, [message]);
   return (
     <motion.section
       initial='offScreen'
@@ -55,7 +51,7 @@ const Contact = () => {
           placeholder="Your message"
         />
         <motion.button variants={buttonVariants} className="bg-white px-5 py-2 rounded-3xl md:px-8 md:py-4 md:rounded-full lg:px-10">
-          <a href={`https://wa.me/+2349058731812?${encodeURIComponent(message)}`} target='_blank' rel='noreferrer'>
+          <a href={`https://wa.me/+2348026580836?${encodeURIComponent(message)}`} target='_blank' rel='noreferrer'>
             <div className="flex items-center">
               <p className="tracking-wide md:text-xl">Send</p>
               <div className='border-b border-black ml-2 h-1 w-6 md:ml-3 md:w-12 lg:ml-4 lg:w-16' />
