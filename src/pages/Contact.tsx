@@ -79,7 +79,7 @@ const Contact = () => {
             <IoMailOutline className="text-brand" />Send an Email
           </motion.h2>
           <motion.p variants={textVariants} className='self-end text-gray-300 text-xs font-extralight indent-20 pl-2 w-10/12 pb-2 -mt-10'>Get started with personalized guidance! Schedule a free consultation by sending an email to us at</motion.p>
-          <motion.a variants={textVariants} href="mailto:oluwatobisalau2000@mail.com" className="self-end">
+          <motion.a variants={textVariants} href="mailto:abdulyakeen2018@gmail.com" className="self-end">
             <p className="text-base text-brand text-right font-secondary font-light tracking-wide w-10/12 hover:underline md:text-lg">abdulyakeen2018@gmail.com</p>
           </motion.a>
         </div>
